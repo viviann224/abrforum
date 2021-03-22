@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 
 const secret = 'mysecretsshhhhh';
 const expiration = '200h';
-
+//checks jwt.sign == jwt.verify
 module.exports = {
   signToken: function({ username, email, _id }) {
     const payload = { username, email, _id };
